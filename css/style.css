@@ -1,5 +1,5 @@
 body {
-    background-image: url('./img/mac.jpg');
+    background-image: url('../img/mac.jpg');
     background-size: cover;
   color: lightblue;
 }
