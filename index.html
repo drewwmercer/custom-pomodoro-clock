@@ -15,16 +15,51 @@
 </head>
 
 <body>
-
     <div class="container text-center">
       <h1>Pomodoro Clock</h1>
-        <h4>See it live on my
-            <a href="http://www.drewwmercer.xyz/custom-pomodoro-clock/" target="_blank">GitHub Pages</a> site</h4>
+      <h4>See it live on my
+        <a href="http://www.drewwmercer.xyz/custom-pomodoro-clock/" target="_blank">GitHub Pages</a> site</h4>
 
-
+      <div class="container">
+        <div class="pomodoro-container">
+          <div class="timer-pause-container">
+            <div class="timer-container">
+              <h3 id="duration" class="timer-title">Session</h3>
+              <div id="timer-panel" class="countdown-panel">
+                <button id="timer-decrease" class="countdown-changer">-</button>
+                <p id="timer" class="time-remaining"></p>
+                <button id="timer-increase" class="countdown-changer">+</button>
+              </div>
+            </div>
+            <div class="pause-container">
+              <h3 id="break" class="timer-title">Break</h3>
+              <div id="pause-panel" class="countdown-panel">
+                <button id="pause-decrease" class="countdown-changer">-</button>
+                <p id="pause" class="time-remaining"></p>
+                <button id="pause-increase" class="countdown-changer">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="function-container">
+            <div class="functions">
+              <button type="button" id="start" class="btn btn-primary function-button">Start</button>
+              <button type="button" id="pause-resume" class="btn btn-info function-button">Pause</button>
+              <button id="restart" class="function-button">Restart</button>
+              <script>
+                $("button#pause-resume").prop("disabled", true);
+                $("button#restart").prop("disabled", true);
+              </script>
+            </div>
+          </div>
+          <div class="status-container">
+            <p id="status-info-container">Timer Status:
+              <span id="status-info">IDLE</span>
+            </p>
+          </div>
+        </div>
+      </div>
 
     </div>
-
 
     <!-- Linking to jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
