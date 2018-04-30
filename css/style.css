@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://images.pexels.com/photos/7106/macbook-computer-clean-hero.jpg');
+    background-image: url('./img/mac.jpg');
     background-size: cover;
   color: lightblue;
 }
