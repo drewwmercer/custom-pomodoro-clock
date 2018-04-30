@@ -3,3 +3,218 @@ body {
     background-size: cover;
   color: lightblue;
 }
+
+h1 {
+  color: white;
+}
+
+div.pomodoro-container {
+  border: 2px solid black;
+  border-radius: 32px 32px;
+}
+
+div.timer-pause-container {
+  width: 100%;
+  height: 55%;
+  background-color: mediumaquamarine;
+  border-radius: 30px 30px 0px 0px;
+}
+
+div.timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+  float: left;
+  border-right: 1px solid black;
+  border-radius: 30px 0px 0px 0px;
+  -moz-box-shadow: inset 0 0 8px #000000;
+  -webkit-box-shadow: inset 0 0 8px #000000;
+  box-shadow: inset 0 0 8px #000000;
+  padding: 10px;
+}
+
+h3.timer-title {
+  font-weight: 100;
+}
+
+div.countdown-panel {
+  display: inline-flex;
+}
+
+button.countdown-changer {
+  padding: 10px 25px;
+  border: 2px solid black;
+  background-color: lightred;
+  justify-content: center;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: inset 0px 0px 20px blue;
+}
+
+button.countdown-changer:hover {
+  background-color: lightblue;
+}
+
+button.countdown-changer:disabled {
+  background-color: lightgray;
+  box-shadow: none;
+}
+
+button#timer-decrease {
+  border-radius: 50% 50% 50% 50%;
+  margin: 10%;
+}
+
+button#timer-increase {
+  border-radius: 50% 50% 50% 50%;
+  margin: 10%;
+}
+
+button#pause-decrease {
+  border-radius: 50% 50% 50% 50%;
+  margin: 10%;
+}
+
+button#pause-increase {
+  border-radius: 50% 50% 50% 50%;
+  margin: 10%;
+}
+
+p.time-remaining {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  color: Maroon;
+  width: 115px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  background-color: white;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-top: 5%;
+}
+
+div.pause-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+  float: left;
+  border-left: 1px solid black;
+  border-radius: 0px 30px 0px 0px;
+  -moz-box-shadow: inset 0 0 8px #000000;
+  -webkit-box-shadow: inset 0 0 8px #000000;
+  box-shadow: inset 0 0 8px #000000;
+  padding: 10px;
+}
+
+div.function-container {
+  width: 100%;
+  height: 30%;
+  background-color: lightgray;
+}
+
+div.functions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  float: left;
+  padding: 10px;
+}
+
+button.function-button {
+  width: 100px;
+  padding: 8px 15px;
+  border: 1px solid black;
+  border-radius: 10% / 20px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+button#start {
+  background-color: lightgreen;
+  transition: all 0.2s ease-in-out;
+  box-shadow: inset 0px 0px 10px springgreen;
+}
+
+button#start:hover {
+  background-color: springgreen;
+  box-shadow: inset 0px 0px 10px green;
+}
+
+button#start:disabled {
+  background-color: lightgray;
+  box-shadow: none;
+  font-weight: 100;
+}
+
+button#pause-resume {
+  background-color: lightsteelblue;
+  transition: all 0.2s ease-in-out;
+  box-shadow: inset 0px 0px 10px mediumturquoise;
+}
+
+button#pause-resume:hover {
+  background-color: mediumturquoise;
+  box-shadow: inset 0px 0px 10px royalblue;
+}
+
+button#pause-resume:disabled {
+  background-color: lightgray;
+  box-shadow: none;
+  font-weight: 100;
+}
+
+button#restart {
+  background-color: rgb(255, 124, 124);
+  transition: all 0.2s ease-in-out;
+  box-shadow: inset 0px 0px 10px #ff4f4f;
+}
+
+button#restart:hover {
+  background-color: #ff4f4f;
+  box-shadow: inset 0px 0px 10px firebrick;
+}
+
+button#restart:disabled {
+  background-color: lightgray;
+  box-shadow: none;
+  font-weight: 100;
+}
+
+div.status-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  background-color: rgba(255, 255, 51, 0.5);
+  border-radius: 0px 0px 30px 30px;
+  color: black;
+  padding-top: 10px;
+}
+
+p#status-info-container {
+  font-weight: 200;
+}
+
+span#status-info {
+  font-weight: 900;
+  transition: all 0.3s ease;
+}
